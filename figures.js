@@ -47,3 +47,53 @@ function areaCircle(radius) {
 
 
 console.groupEnd();
+
+
+//------ Conexion HTML
+function calcPerimeterSquare(){
+    const input = document.getElementById("InputSquare");
+    const value = input.value;
+    const perimetr = perimeterSquare(value);
+    alert(perimetr);
+}
+
+function calcAreaSquare(){
+    const input = document.getElementById("InputSquare");
+    const value = input.value;
+    const area = areaSquare(value);
+    alert(area);
+}
+
+function calcPerimeterTriangle(){
+    const side1 = document.getElementById("InputTriangle1");
+    const side2 = document.getElementById("InputTriangle2");
+    const base = document.getElementById("InputBase");
+    const value1 = Number(side1.value);
+    const value2 = Number(side2.value);
+    const value3 = Number(base.value);
+    const perimetr = perimeterTriangle(value1,value2,value3);
+    alert(perimetr);
+}
+
+function calcAreaTriangle(){
+    const base = document.getElementById("InputBase");
+    const heigh = document.getElementById("InputHeight");
+    const value1 = base.value;
+    const value2 = heigh.value;
+    const area = areaTriangle(value1,value2);
+    alert(area);
+}
+
+function calcPerimeterCircle(){
+    const input = document.getElementById("InputRadius");
+    const value = input.value;
+    const perimetr = perimeterCircle(value);
+    alert(perimetr);
+}
+
+function calcAreaCircle(){
+    const input = document.getElementById("InputRadius");
+    const value = input.value;
+    const area = areaCircle(value);
+    alert(area);
+}

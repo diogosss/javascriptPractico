@@ -5,11 +5,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometric Figures | JS</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>
-        Geometric Figures
-    </h1>
+    
+    <header class="header">
+        <h1 class="header-title">Geometric Figures</h1>
+        <p class="header-p">
+            Practice JavaScript
+        </p>
+    </header>
+
+    <main class="main-figures">    
+        <section class="section-square">
+            <h2>
+                Area and Perimeter of Square
+            </h2>
+
+            <div class="figure-square"></div>
+
+            <form action="">
+                <p> Write the long of the square side</p>
+                <div class="input-number">                
+                    <label for="InputSquare">
+                        Side
+                    </label>
+
+                    <input id="InputSquare" type="number">
+                </div>
+
+                <div class="content-button">
+                    <button type="button" onclick="calcPerimeterSquare()">
+                        Perimeter
+                    </button>
+
+                    <button type="button" onclick="calcAreaSquare()">
+                        Area
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="section-circle">
+            <h2>
+                Area and Perimeter of Circle
+            </h2>
+
+            <div class="figure-circle"></div>
+
+            <form action="">
+                <p> Write the radius of a circle</p>
+                <div class="input-number">                
+                    <label for="InputRadius">
+                        Radius
+                    </label>
+
+                    <input id="InputRadius" type="number">
+                </div>
+
+                <div class="content-button">
+                    <button type="button" onclick="calcPerimeterCircle()">
+                        Perimeter
+                    </button>
+
+                    <button type="button" onclick="calcAreaCircle()">
+                        Area
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="section-triangle">
+            <h2>
+                Area and Perimeter of Triangle
+            </h2>
+
+            <div class="figure-triangle"></div>
+
+            <form action="">
+                <p> Write the data of the triangle</p>
+                <div class="input-number">
+                    <!-- One side -->                
+                    <label for="InputTriangle1">
+                        Side 1
+                    </label>
+
+                    <input id="InputTriangle1" type="number">
+                </div>
+
+                <div class="input-number">
+                    <!-- Two side -->                
+                    <label for="InputTriangle2">
+                        Side 2
+                    </label>
+
+                    <input id="InputTriangle2" type="number">
+                </div>
+
+                <div class="input-number">
+                    <!-- base side -->                
+                    <label for="InputBase">
+                        Base
+                    </label>
+
+                    <input id="InputBase" type="number">
+                </div>
+
+                <div class="input-number">
+                    <!-- Height -->                
+                    <label for="InputHeight">
+                        Height
+                    </label>
+
+                    <input id="InputHeight" type="number">
+                </div>
+
+                <div class="content-button">
+                    <button type="button" onclick="calcPerimeterTriangle()">
+                        Perimeter
+                    </button>
+
+                    <button type="button" onclick="calcAreaTriangle()">
+                        Area
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        
+    </main>
+
+    <footer class="footer">
+        <img src="/" alt="figures">
+        <div class="footer-copyright">
+            © 2020, Todos los Derechos Reservados
+        </div>
+    </footer>
     
     <script src="./figures.js">
     </script>
