@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(23, 97, 235);
+    border-bottom: 10px solid rgb(9, 17, 129) ;
+    text-align: center;
+    padding: 2rem, 1 rem;
+    color: #ffff;
+}
+
+.header .header-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.header .header-p {
+    margin-top: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-figures {
+    background-color: aquamarine;
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-figures section {
+    margin: 0 1rem;
+    background-color: bisque;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: 1px solid green;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+}
+
+.main-figures section:nth-child(1){
+    margin-top: 0;
+}
+
+.main-figures section h2 {
+    background-color: salmon;
+    padding: 1rem 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.main-figures section .figure-square {
+    background-color: gold;
+    width: 8rem;
+    height: 8rem;
+    margin: 2rem auto;
+}
+
+.main-figures section .figure-triangle {
+    width: 0;
+    height: 0;
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-bottom: 80px solid gold;
+    margin: 2rem auto;
+}
+
+.main-figures section .figure-circle {
+    background-color: gold;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    margin: 2rem auto;
+}
+
+.main-figures form {
+    border-top: 1px solid cyan;
+    padding: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(65, 97, 240, 0.788);
+}
+
+.main-figures form p{
+    margin-bottom: 1.5rem;
+}
+
+.main-figures form .input-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.main-figures form .input-number label {
+    text-align: right;
+    margin-right: 2rem;
+    width: 8rem;
+}
+
+.main-figures form .input-number input {
+    width: 8rem;
+    padding: 0.5rem 0.6rem;
+    outline: none;
+    border: 1px solid rgba(44, 77, 51, 0.8);
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+
+}
+
+.main-figures form .content-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-figures form .content-button button{ 
+    margin-top: 1rem;
+    background-color: rgb(191, 202, 221);
+    outline: none;
+    border: 2px solid grey;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.main-figures form .content-button button:hover {
+    background-color: antiquewhite;
+}
+
+.main-figures form .content-button button:active {
+    transform: scale(0.90);
+}
+
+.main-figures form .content-button button:nth-child(1){
+    margin-top: 100;
+}
+
+.footer {
+    border-top: 10px solid #3c588f;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    background-color: #20375a;
+}
+
+.footer img {
+    max-width: 200px;
+}
+
+.footer .footer-copyright {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: #3c588f;
+    width: 100%;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .main-figures section {
+        flex-basis: calc(33% - 1rem);
+        
+    }
+
+    .main-figures section:nth-child(2) {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .main-figures form .input-number input {
+        margin-right: 4rem;
+    }
+}
+
+
+
+
