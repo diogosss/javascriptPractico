@@ -26,6 +26,35 @@ function areaTriangle(base, height) {
     return (base * height) / 2;
 } 
 
+// height Triangle isosceles
+function heightTriangle(side1, side2, base){
+    if(side1 === side2 && side1 != base){
+        const height = Math.sqrt(side1**2 - base**2 / 4)
+        return height;
+    }else{
+        return "Error";
+    }
+}
+
+const calculAltura = function (a, b, c) {
+    let A;
+    if(a > b && b === c && a >= 2*b || b > a && a === c && b >= 2*a || c > a && a === b && c >= 2*a) {
+        alert('Valores fuera de lo real');
+    } else if(a > b && a === c || a < b && a === c) {
+        A = Math.sqrt(Math.pow(a,2) - Math.pow(b/2, 2));
+        return A;
+    } else if(a > c && a === b || a < c && a === b) {
+        A = Math.sqrt(Math.pow(a,2) - Math.pow(c/2, 2));
+        return A;
+    } else if(b > a && b === c || b < a && b === c) {
+        A = Math.sqrt(Math.pow(b,2) - Math.pow(a/2, 2));
+        return A;
+    } else {
+        alert('El triangulo no es Isósceles');
+    }
+}   
+
+
 console.groupEnd();
 
 //CIRCLE------------------------------------------
@@ -84,6 +113,18 @@ function calcAreaTriangle(){
     alert(area);
 }
 
+function calcHeightTriangle(){
+    const side1 = document.getElementById("InputTriangle1");
+    const side2 = document.getElementById("InputTriangle2");
+    const base = document.getElementById("InputBase");
+    const value1 = Number(side1.value);
+    const value2 = Number(side2.value);
+    const value3 = Number(base.value);
+    //const height = heightTriangle(value1,value2,value3);
+    const height = calculAltura(value1,value2,value3);
+    alert(height);
+}
+
 function calcPerimeterCircle(){
     const input = document.getElementById("InputRadius");
     const value = input.value;
@@ -96,4 +137,5 @@ function calcAreaCircle(){
     const value = input.value;
     const area = areaCircle(value);
     alert(area);
-}
+} 
+
