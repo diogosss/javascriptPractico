@@ -1,0 +1,32 @@
+header {
+    background-color: #000000;
+}
+
+header img {
+    width: 40%;
+}
+
+.main__container h2 {
+    width: 300px;
+}
+
+.form__button {
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #111111;
+}
+
+form .form__container-input:hover {
+    box-shadow: 0 1px 6px 0 #fc9eae;
+}
+
+
+footer ul{
+    justify-content: space-evenly;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
