@@ -19,3 +19,11 @@ https://pandao.github.io/editor.md/en.html
 - Second step: Implemens math in JS
 - Third step: write methods
 - Fourth step: JS and HTML
+
+
+## Class #3 Average Median Mode
+
+- First step: define math and formules
+- Second step: Implemens formules in JS
+- Third step: write methods
+- Fourth step: JS and HTML
